@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy's Password Strength Checker</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Strength Checker</h2>
+
+        <!-- Password Input -->
+        <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+
+        <!-- Show/Hide Password Button -->
+        <button id="togglePassword" class="toggle-password">Show Password</button>
+
+        <!-- Strength Text -->
+        <p id="strength-text">Strength: </p>
+
+        <!-- Feedback / Suggestions -->
+        <div class="feedback" id="feedback">
+            • Use at least 12 characters.<br>
+            • Mix uppercase and lowercase letters.<br>
+            • Add numbers.<br>
+            • Add special characters (@, $, !, %, etc).
+        </div>
+
+
+        <!-- Strength Bar -->
+        <div class="strength-bar">
+            <div class="strength-fill" id="strength-fill"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
